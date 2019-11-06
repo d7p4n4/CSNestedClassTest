@@ -16,19 +16,9 @@ namespace CSNestedClassTest
         public DateTime EnrollmentDate { get; set; }
         public Person Identity { get; set; }
 
+        public ICollection<Grade> Grades { get; set; }
 
-        public class Person
-        {
 
-            public Person(string fatherName, DateTime birthDate)
-            {
-                FatherName = fatherName;
-                BirthDate = birthDate;
-            }
-
-            public string FatherName { get; set; }
-            public DateTime BirthDate { get; set; }
-
-        }
+       
     }
 }
